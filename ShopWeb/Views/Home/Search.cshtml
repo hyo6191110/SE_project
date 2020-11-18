@@ -1,0 +1,25 @@
+﻿@using ShopWeb.Models
+@model PurchaseHomeTotalInfo
+@{
+    ViewBag.Title = "搜索结果";
+}
+
+<div class="section145">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="main-title-tt">
+                    <div class="main-title-left">
+                        <span>为你挑选 </span>
+                        <h2>搜索 "@Model.search_content" 结果:</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" id="home_part_2">
+                @Html.Partial("HomePart2", Model)
+            </div>
+        </div>
+    </div>
+</div>
+
